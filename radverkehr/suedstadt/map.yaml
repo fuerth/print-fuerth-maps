@@ -1,0 +1,214 @@
+# map definition file
+# -------------------
+# general hint for this yaml config file:
+# - do not use tabs or unnecessary white spaces
+#
+# useful links:
+# - https://github.com/mapnik/mapnik/wiki/SymbologySupport
+# - http://mapnik.org/mapnik-reference
+#
+# basic symbolizers:
+# - LinePatternSymbolizer (https://github.com/mapnik/mapnik/wiki/LinePatternSymbolizer)
+# - LineSymbolizer (https://github.com/mapnik/mapnik/wiki/LineSymbolizer)
+# - MarkersSymbolizer (https://github.com/mapnik/mapnik/wiki/MarkersSymbolizer)
+# - PointSymbolizer (https://github.com/mapnik/mapnik/wiki/PointSymbolizer)
+# - PolygonPatternSymbolizer (https://github.com/mapnik/mapnik/wiki/PolygonPatternSymbolizer)
+# - PolygonSymbolizer (https://github.com/mapnik/mapnik/wiki/PolygonSymbolizer)
+# - TextSymbolizer (https://github.com/mapnik/mapnik/wiki/TextSymbolizer)
+#
+# advanced symbolizers:
+# - BuildingSymbolizer (https://github.com/mapnik/mapnik/wiki/BuildingSymbolizer)
+# - RasterSymbolizer (https://github.com/mapnik/mapnik/wiki/RasterSymbolizer)
+# - ShieldSymbolizer (https://github.com/mapnik/mapnik/wiki/ShieldSymbolizer)
+#
+# purpose: 
+# author : 
+# release: 
+#
+# frame (2 + 18 = bleed + frame): generate frame and border
+# - printmaps passepartout 420.0 594.0 20.0 20.0 20.0 20.0
+#
+# crop marks: generate crop marks for all four corners
+# - printmaps cropmarks 420.0 594.0 5.0
+#
+# scale bar: generate scale bar (nature length 2000 meters)
+# - printmaps bearingline 54.82 8.50 90.0 2000.0 "2000 Meter" scalebar-2000
+# - uncomment sections marked as 'scale bar'
+#
+# track: print user provided GPX track onto the map
+# - uncomment sections marked as 'track'
+
+# service configuration
+# ---------------------
+
+# URL of webservice
+ServiceURL: http://printmaps-osm.de:8282/api/beta2/maps/
+
+# proxy configuration (not to be done here)
+# - set the environment variable $HTTP_PROXY on your local system 
+# - e.g. export HTTP_PROXY=http://user:password@proxy.server:port
+
+# essential map attributes (required)
+# -----------------------------------
+
+# file format (png, pdf, svg)
+Fileformat: png
+
+# scale as in "1:10000" (e.g. 10000, 25000)
+Scale: 10000
+
+# width and height (millimeter, e.g. 609.6)
+PrintWidth: 180
+PrintHeight: 200
+
+# center coordinates (decimal degrees, e.g. 51.9506)
+Latitude: 49.4679
+Longitude: 10.9923
+
+# style / design (osm-carto, osm-carto-mono, osm-carto-ele20, schwarzplan, schwarzplan+, raster10, transparent)
+# osm-carto: OpenStreetMap Carto Style
+# osm-carto-mono: OpenStreetMap Carto Monochrome Style
+# osm-carto-ele20: OpenStreetMap Carto Elevation Style (20 m)
+# schwarzplan: Figure Ground Plan (buildings)
+# schwarzplan+: Figure Ground Plan Plus (buildings, water areas, highways)
+# raster10: Map canvas divided into a 10x10 raster
+# transparent: Transparent map canvas
+# request service capabilities to get a list of all available map styles
+Style: osm-carto-mono
+
+# map projection, EPSG code as number (without prefix "EPSG:")
+# e.g. 3857 (EPSG:3857 / WGS84 / Web Mercator) (used by Google/Bing/OpenStreetMap)
+# e.g. 32632 (EPSG:32632 / WGS 84 / UTM Zone 32N)
+# e.g. 27700 (EPSG:27700 / OSGB 1936 / British National Grid)
+# e.g. 2056 (EPSG:2056 / CH1903+ / LV95)
+Projection: 3857
+
+# advanced map attributes (optional)
+# ----------------------------------
+
+# layers to hide (see service capabilities for possible values)
+# e.g. hide admin borders: admin-low-zoom,admin-mid-zoom,admin-high-zoom,admin-text
+# e.g. hide nature reserve borders: protected-areas,protected-areas-text
+# e.g. hide tourism borders (theme park, zoo): tourism-boundary
+# e.g. hide highway shields: roads-text-ref-low-zoom,roads-text-ref
+# e.g. hide area texts: text-poly-low-zoom,text-poly
+HideLayers: admin-low-zoom,admin-mid-zoom,admin-high-zoom,admin-text,protected-areas,protected-areas-text
+
+# user defined objects (optional, draw order remains)
+# ---------------------------------------------------
+#
+# data object defined by ...
+# style: object style
+# srs: spatial reference system (is always '+init=epsg:4326' for gpx and kml)
+# type: type of data source (ogr, shape, gdal, csv)
+# file: name of data objects file
+# layer: data layer to extract (only required for ogr)
+#
+# item object defined by ...
+# style: object style
+# well-known-text: object definition
+#
+# well-known-text:
+#   POINT, LINESTRING, POLYGON, MULTIPOINT, MULTILINESTRING, MULTIPOLYGON
+#   all values are in millimeter (reference X0 Y0: lower left map corner)
+#
+# font sets:
+#   fontset-0: Noto Fonts normal
+#   fontset-1: Noto Fonts italic
+#   fontset-2: Noto Fonts bold
+
+UserObjects:
+
+# planned new quarter (geojson data)
+- Style: <LineSymbolizer stroke='#008000' stroke-width='4' stroke-opacity='0.7' stroke-linecap='round' />
+  SRS: '+init=epsg:4326'
+  Type: ogr
+  File: Radverkehr_Fuerth_bicycle.geojson
+  Layer: OGRGeoJSON
+
+- Style: <LineSymbolizer stroke='#BA55D3' stroke-width='4' stroke-opacity='0.7' stroke-linecap='round' />
+  SRS: '+init=epsg:4326'
+  Type: ogr
+  File: Radverkehr_Fuerth_car.geojson
+  Layer: OGRGeoJSON
+
+- Style: <LineSymbolizer stroke='#8B4513' stroke-width='4' stroke-opacity='0.7' stroke-linecap='round' />
+  SRS: '+init=epsg:4326'
+  Type: ogr
+  File: Radverkehr_Fuerth_outdoor.geojson
+  Layer: OGRGeoJSON
+
+- Style: <LineSymbolizer stroke='#800080' stroke-width='4' stroke-opacity='0.7' stroke-linecap='round' />
+  SRS: '+init=epsg:4326'
+  Type: ogr
+  File: Radverkehr_Fuerth_pedestrian.geojson
+  Layer: OGRGeoJSON
+
+# - Style: <LineSymbolizer stroke='#663399' stroke-width='4' stroke-opacity='0.7' stroke-linecap='round' />
+#   SRS: '+init=epsg:4326'
+#   Type: ogr
+#   File: Radverkehr_Fuerth_unknown.geojson
+#   Layer: OGRGeoJSON
+
+# - Style: <LineSymbolizer stroke='#FF0000' stroke-width='4' stroke-opacity='0.5' stroke-linecap='round' />
+#   SRS: '+init=epsg:4326'
+#   Type: ogr
+#   File: Radverkehr_Fuerth_WGS84.gpx
+#   Layer: tracks
+
+# frame
+# - Style: <PolygonSymbolizer fill='white' fill-opacity='1.0' /> 
+#   WellKnownText: POLYGON((0.0 0.0, 0.0 420.0, 594.0 420.0, 594.0 0.0, 0.0 0.0), (20.0 20.0, 20.0 400.0, 574.0 400.0, 574.0 20.0, 20.0 20.0))
+
+# border (around map area)
+- Style: <LineSymbolizer stroke='black' stroke-width='6.0' stroke-linecap='square' />
+  WellKnownText: LINESTRING(0.0 0.0, 0.0 200.0, 180.0 200.0, 180.0 0.0, 0.0 0.0)
+
+# crop marks (only the half line width is visible)
+#- Style: <LineSymbolizer stroke='dimgray' stroke-width='1.5' stroke-linecap='square' />
+#  WellKnownText: MULTILINESTRING((5.0 0.0, 0.0 0.0, 0.0 5.0), (5.0 594.0, 0.0 594.0, 0.0 589.0), (415.0 594.0, 420.0 594.0, 420.0 589.0), (415.0 0.0, 420.0 0.0, 420.0 5.0))
+
+# title
+#- Style: <TextSymbolizer fontset-name='fontset-2' size='100' fill='dimgray' opacity='0.2' allow-overlap='true'>'Sylt'</TextSymbolizer>
+#  WellKnownText: POINT(90.0 530.0)
+
+# copyright
+# - Style: <TextSymbolizer fontset-name='fontset-0' size='12' fill='dimgray' orientation='0' allow-overlap='true'>'© OpenStreetMap contributors, © CARTO, Radverkehrsdaten CC-BY Stadt Fürth, 21.02.20'</TextSymbolizer>
+#   WellKnownText: POINT(90.0 18.0)
+
+# fuerth.io (600x300)
+# - Style: <PointSymbolizer allow-overlap='yes' file='fuerth-io-logo.svg' transform='scale(0.8, 0.8)' />
+#   WellKnownText: POINT(140 360)
+
+# fullstax (137x29)
+# - Style: <PointSymbolizer allow-overlap='yes' file='fullstax-logo.svg' transform='scale(1, 1)' />
+#   WellKnownText: POINT(500 10)
+
+# OpenStreetMap (200x200)
+# - Style: <PointSymbolizer allow-overlap='yes' file='openstreetmap-logo.png' transform='scale(0.2, 0.2)' />
+#   WellKnownText: POINT(530 10)
+
+# CC_BY (88x31)
+# - Style: <PointSymbolizer allow-overlap='yes' file='CC-BY-SA_icon_white.png' transform='scale(0.6, 0.6)' />
+#   WellKnownText: POINT(557 10)
+
+
+# scale
+- Style: <TextSymbolizer fontset-name='fontset-2' size='18' fill='black' orientation='0' allow-overlap='true'>'1:10000'</TextSymbolizer>
+  WellKnownText: POINT(165.0 8.0)
+
+# user files to upload
+# --------------------
+
+UserFiles:
+  - Radverkehr_Fuerth_bicycle.geojson
+  - Radverkehr_Fuerth_car.geojson
+  - Radverkehr_Fuerth_outdoor.geojson
+  - Radverkehr_Fuerth_pedestrian.geojson
+#  - Radverkehr_Fuerth_unknown.geojson
+#  - Radverkehr_Fuerth_WGS84.geojson
+#  - Radverkehr_Fuerth_WGS84.gpx
+#  - fuerth-io-logo.svg
+#  - fullstax-logo.svg
+#  - CC-BY-SA_icon_white.png
+#  - openstreetmap-logo.png
