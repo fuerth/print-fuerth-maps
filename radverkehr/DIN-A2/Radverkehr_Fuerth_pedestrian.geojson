@@ -4669,6 +4669,51 @@
 		{
 			"type": "Feature",
 			"properties": {
+				"LAGE": "Gustav-Schickedanz-Straße",
+				"Shape_Leng": 80.4165589914,
+				"von": "Königstraße",
+				"bis": "Rudolf-Breitscheid-Straße",
+				"Bemerkung": null,
+				"Typ": "2-Ri- Radweg  (auf Gehweg)",
+				"designation": "pedestrian"
+			},
+			"geometry": {
+				"type": "LineString",
+				"coordinates": [
+					[
+						10.993094206315426,
+						49.472661474328504
+					],
+					[
+						10.993083296093541,
+						49.47258869677194
+					],
+					[
+						10.993051130962849,
+						49.472533604574856
+					],
+					[
+						10.992983785261917,
+						49.47248505768236
+					],
+					[
+						10.992682422951157,
+						49.472312287789464
+					],
+					[
+						10.992407061785109,
+						49.47215344661798
+					],
+					[
+						10.99237935759097,
+						49.47213721842385
+					]
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
 				"LAGE": "Gebhardstraße",
 				"Shape_Leng": 421.333741231,
 				"von": null,
@@ -8058,6 +8103,39 @@
 					[
 						11.002339069568508,
 						49.49638099781153
+					]
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"LAGE": "Unterfarrnbacher Straße",
+				"Shape_Leng": 57.9633381901,
+				"von": "Gehweg zur Ligusterstraße",
+				"bis": null,
+				"Bemerkung": null,
+				"Typ": "2-Ri- Radweg  (auf Gehweg)",
+				"designation": "pedestrian"
+			},
+			"geometry": {
+				"type": "LineString",
+				"coordinates": [
+					[
+						10.945969338779166,
+						49.49082628619953
+					],
+					[
+						10.945706286463102,
+						49.491003894177524
+					],
+					[
+						10.945593166270877,
+						49.49112393868778
+					],
+					[
+						10.945507207447237,
+						49.49124509966135
 					]
 				]
 			}

@@ -1,0 +1,516 @@
+{
+	"type": "FeatureCollection",
+	"features": [
+		{
+			"type": "Feature",
+			"properties": {
+				"LAGE": "Rudolf-Breitscheid-Straße",
+				"Shape_Leng": 128.16677757,
+				"von": "Friedrichstraße",
+				"bis": "Gustav-Schickedanz-Straße",
+				"Bemerkung": null,
+				"Typ": "Sonstige",
+				"designation": "misc"
+			},
+			"geometry": {
+				"type": "LineString",
+				"coordinates": [
+					[
+						10.990839250626733,
+						49.47292700551422
+					],
+					[
+						10.992025603693635,
+						49.4721658839694
+					],
+					[
+						10.992078920200584,
+						49.47210811046362
+					]
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"LAGE": "Am Stübleacker",
+				"Shape_Leng": 101.085762097,
+				"von": "Treppenanlage",
+				"bis": null,
+				"Bemerkung": null,
+				"Typ": "Sonstige",
+				"designation": "misc"
+			},
+			"geometry": {
+				"type": "LineString",
+				"coordinates": [
+					[
+						10.988156805315006,
+						49.45125872823768
+					],
+					[
+						10.98928626966099,
+						49.45093310942734
+					],
+					[
+						10.989437656524338,
+						49.450964931430235
+					]
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"LAGE": "Jakobinenstraße",
+				"Shape_Leng": 40.358326687,
+				"von": "Überfahrt Gebhardtstr.",
+				"bis": null,
+				"Bemerkung": null,
+				"Typ": "Sonstige",
+				"designation": "misc"
+			},
+			"geometry": {
+				"type": "LineString",
+				"coordinates": [
+					[
+						11.00132197138174,
+						49.46799831403028
+					],
+					[
+						11.001219512918196,
+						49.46803930001562
+					],
+					[
+						11.001246645345526,
+						49.46808368857337
+					],
+					[
+						11.001282451118945,
+						49.468148787423715
+					],
+					[
+						11.001322203376404,
+						49.468216803799926
+					],
+					[
+						11.001354323554999,
+						49.46824670333289
+					],
+					[
+						11.001437988844078,
+						49.4682672865213
+					]
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"LAGE": "? mögliche Querverbindung?",
+				"Shape_Leng": 45.8928127834,
+				"von": "Friedenstraße",
+				"bis": "Ulmenstraße",
+				"Bemerkung": null,
+				"Typ": "Sonstige",
+				"designation": "misc"
+			},
+			"geometry": {
+				"type": "LineString",
+				"coordinates": [
+					[
+						10.99385012362165,
+						49.480381968383895
+					],
+					[
+						10.99400485113528,
+						49.48038616864679
+					],
+					[
+						10.994187342242459,
+						49.480432480474796
+					],
+					[
+						10.994394603641172,
+						49.48045312378644
+					],
+					[
+						10.994466284200099,
+						49.480461740227504
+					]
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"LAGE": "Querung Höhe Kulturforum",
+				"Shape_Leng": 20.8259501346,
+				"von": null,
+				"bis": null,
+				"Bemerkung": null,
+				"Typ": "Sonstige",
+				"designation": "misc"
+			},
+			"geometry": {
+				"type": "LineString",
+				"coordinates": [
+					[
+						10.981751937351547,
+						49.480085585179026
+					],
+					[
+						10.981862114423791,
+						49.48025851631009
+					]
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"LAGE": "Querungshilfe Zufahrt Betriebsweg",
+				"Shape_Leng": 17.8602534483,
+				"von": "Am Europakanal",
+				"bis": null,
+				"Bemerkung": null,
+				"Typ": "Sonstige",
+				"designation": "misc"
+			},
+			"geometry": {
+				"type": "LineString",
+				"coordinates": [
+					[
+						10.977007745535518,
+						49.45459208762795
+					],
+					[
+						10.977248634973451,
+						49.45462562065021
+					]
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"LAGE": "Karolinenstraße",
+				"Shape_Leng": 24.233499692,
+				"von": "Zuwegung Osttunnel",
+				"bis": null,
+				"Bemerkung": null,
+				"Typ": "Sonstige",
+				"designation": "misc"
+			},
+			"geometry": {
+				"type": "LineString",
+				"coordinates": [
+					[
+						10.990540120488843,
+						49.46919220318603
+					],
+					[
+						10.990594713082151,
+						49.46917852148368
+					],
+					[
+						10.990705355917413,
+						49.46915069878377
+					],
+					[
+						10.990732323234614,
+						49.469212757504025
+					],
+					[
+						10.990785632841803,
+						49.469197436816714
+					]
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"LAGE": "Karolinenstraße",
+				"Shape_Leng": 13.4220501699,
+				"von": "Zuwegung Osttunnel",
+				"bis": null,
+				"Bemerkung": null,
+				"Typ": "Sonstige",
+				"designation": "misc"
+			},
+			"geometry": {
+				"type": "LineString",
+				"coordinates": [
+					[
+						10.991292214664679,
+						49.46907162629232
+					],
+					[
+						10.991252625824455,
+						49.46908940110579
+					],
+					[
+						10.99112365298671,
+						49.46911968917689
+					]
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"LAGE": "Rudolf-Breitscheid-Straße",
+				"Shape_Leng": 142.533504428,
+				"von": "Friedrichstraße",
+				"bis": "Gustav-Schickedanz-Straße",
+				"Bemerkung": null,
+				"Typ": "UNKNOWN",
+				"designation": "misc"
+			},
+			"geometry": {
+				"type": "LineString",
+				"coordinates": [
+					[
+						10.990810765511595,
+						49.472949246511035
+					],
+					[
+						10.992213862683332,
+						49.4720513871322
+					]
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"LAGE": "St. Nürnberg",
+				"Shape_Leng": 39.8743961154,
+				"von": "Stadtgrenze",
+				"bis": "Auffahrt RW entl. Fürther Straße",
+				"Bemerkung": null,
+				"Typ": "UNKNOWN",
+				"designation": "misc"
+			},
+			"geometry": {
+				"type": "LineString",
+				"coordinates": [
+					[
+						11.012108259668656,
+						49.46539123460839
+					],
+					[
+						11.012540809236981,
+						49.46516977484696
+					]
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"LAGE": "UNKNOWN",
+				"Shape_Leng": 0,
+				"von": null,
+				"bis": null,
+				"Bemerkung": null,
+				"Typ": "UNKNOWN",
+				"designation": "misc"
+			},
+			"geometry": {
+				"type": "MultiLineString",
+				"coordinates": []
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"LAGE": "UNKNOWN",
+				"Shape_Leng": 76.9016301231,
+				"von": null,
+				"bis": null,
+				"Bemerkung": null,
+				"Typ": "UNKNOWN",
+				"designation": "misc"
+			},
+			"geometry": {
+				"type": "LineString",
+				"coordinates": [
+					[
+						10.986944929089306,
+						49.469897073960276
+					],
+					[
+						10.986670877715639,
+						49.469238606914914
+					],
+					[
+						10.986661094613671,
+						49.46923205750946
+					]
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"LAGE": "UNKNOWN",
+				"Shape_Leng": 66.4108465082,
+				"von": null,
+				"bis": null,
+				"Bemerkung": null,
+				"Typ": "UNKNOWN",
+				"designation": "misc"
+			},
+			"geometry": {
+				"type": "LineString",
+				"coordinates": [
+					[
+						10.986646553240865,
+						49.46921577085301
+					],
+					[
+						10.986395567158748,
+						49.46864153338625
+					]
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"LAGE": "UNKNOWN",
+				"Shape_Leng": 74.9729395295,
+				"von": null,
+				"bis": null,
+				"Bemerkung": null,
+				"Typ": "UNKNOWN",
+				"designation": "misc"
+			},
+			"geometry": {
+				"type": "LineString",
+				"coordinates": [
+					[
+						10.986390875643892,
+						49.46862856485182
+					],
+					[
+						10.986146520210015,
+						49.467973588421394
+					]
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"LAGE": "UNKNOWN",
+				"Shape_Leng": 149.153266669,
+				"von": null,
+				"bis": null,
+				"Bemerkung": null,
+				"Typ": "UNKNOWN",
+				"designation": "misc"
+			},
+			"geometry": {
+				"type": "LineString",
+				"coordinates": [
+					[
+						10.986569368179005,
+						49.46863012858227
+					],
+					[
+						10.987108018623378,
+						49.46992435681917
+					]
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"LAGE": "UNKNOWN",
+				"Shape_Leng": 117.1921208,
+				"von": null,
+				"bis": null,
+				"Bemerkung": null,
+				"Typ": "UNKNOWN",
+				"designation": "misc"
+			},
+			"geometry": {
+				"type": "LineString",
+				"coordinates": [
+					[
+						10.989331140671649,
+						49.4708196324126
+					],
+					[
+						10.987777833994903,
+						49.47111200135012
+					]
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"LAGE": "UNKNOWN",
+				"Shape_Leng": 128.827237531,
+				"von": null,
+				"bis": null,
+				"Bemerkung": null,
+				"Typ": "UNKNOWN",
+				"designation": "misc"
+			},
+			"geometry": {
+				"type": "LineString",
+				"coordinates": [
+					[
+						10.987713852585303,
+						49.471008022145845
+					],
+					[
+						10.989413575733936,
+						49.47066953259966
+					]
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"LAGE": "UNKNOWN",
+				"Shape_Leng": 62.2545584186,
+				"von": null,
+				"bis": null,
+				"Bemerkung": null,
+				"Typ": "UNKNOWN",
+				"designation": "misc"
+			},
+			"geometry": {
+				"type": "LineString",
+				"coordinates": [
+					[
+						10.98808847187567,
+						49.47176108994644
+					],
+					[
+						10.988672479759398,
+						49.47165846808639
+					],
+					[
+						10.988868689243553,
+						49.47176360248025
+					]
+				]
+			}
+		}
+	],
+	"bbox": [
+		10.900775467766204,
+		49.435969839294756,
+		11.025070125994253,
+		49.53853613562004
+	]
+}
